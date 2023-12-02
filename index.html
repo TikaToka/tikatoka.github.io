@@ -1,202 +1,104 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
-  <style>
-    body {
-      background-color: #f8f9fa;
-    }
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Joochan Kim's Portfolio</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+</head>
+<body class="bg-gray-100 text-gray-800">
+    <!-- Header -->
+    <header class="bg-white shadow">
+        <nav class="container mx-auto px-6 py-3">
+            <div class="flex justify-between items-center">
+                <div class="text-3xl font-bold">Joochan Kim's Portfolio</div>
+                <div class="flex space-x-4">
+                    <a href="#education" class="hover:text-gray-600">Education</a>
+                    <a href="#research" class="hover:text-gray-600">Research</a>
+                    <a href="#projects" class="hover:text-gray-600">Projects</a>
+                    <a href="#publications" class="hover:text-gray-600">Publications</a>
+                    <a href="#awards" class="hover:text-gray-600">Awards</a>
+                    <a href="#contact" class="hover:text-gray-600">Contact</a>
+                </div>
+            </div>
+        </nav>
+    </header>
 
-    a {
-    color: inherit;
-    text-decoration: none;
-    }
+    <!-- Main Section -->
+    <main>
+        <!-- Education Section -->
+        <section id="education" class="py-12 bg-white">
+            <div class="container mx-auto text-center">
+                <h2 class="text-3xl font-bold mb-6">Education</h2>
+                <p class="text-gray-600 mb-4">Master's Student in Computer Science, Seoul National University (GPA: 3.85/4.5)</p>
+                <p class="text-gray-600">BSc in Computer Science, Yonsei University (GPA: 3.4/4.5)</p>
+            </div>
+        </section>
 
-    section {
-      margin: 50px 0;
-      padding: 30px;
-      background-color: #ffffff;
-      border-radius: 10px;
-      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    }
+        <!-- Research Interests Section -->
+        <section id="research" class="py-12 bg-gray-100">
+            <div class="container mx-auto text-center">
+                <h2 class="text-3xl font-bold mb-6">Research Interests</h2>
+                <p class="text-gray-600 max-w-2xl mx-auto">Multimodal learning, Natural language processing, Computer vision, Bias in AI</p>
+            </div>
+        </section>
 
-    h1 {
-      color: #333333;
-    }
+        <!-- Projects Section -->
+        <section id="projects" class="py-12 bg-white">
+            <div class="container mx-auto">
+                <h2 class="text-3xl font-bold mb-6">Projects</h2>
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+                    <!-- Projects from CV -->
+                    <div class="bg-gray-100 p-6 rounded-lg shadow-md">
+                        <h3 class="font-bold mb-2">Question Generation for QA</h3>
+                        <p class="text-gray-600 mb-4">Researcher and Presenter at Yonsei University</p>
+                    </div>
+                    <div class="bg-gray-100 p-6 rounded-lg shadow-md">
+                        <h3 class="font-bold mb-2">Dataset Selection from Large Corpus</h3>
+                        <p class="text-gray-600 mb-4">Team Leader and Researcher at Yonsei University</p>
+                    </div>
+                </div>
+            </div>
+        </section>
 
-    h2 {
-      color: #555555;
-    }
+        <!-- Publications Section -->
+        <section id="publications" class="py-12 bg-gray-100">
+            <div class="container mx-auto text-center">
+                <h2 class="text-3xl font-bold mb-6">Publications and Conferences</h2>
+                <p class="text-gray-600">Featured in multiple conferences and publications, including a poster presentation at Korea Software Congress 2023.</p>
+            </div>
+        </section>
 
-    h3 {
-      color: #777777;
-    }
-    
-    h4 {
-      color: #999999
-    }
-    
-    p {
-      color: #BBBBBB;
-    }
+        <!-- Awards Section -->
+        <section id="awards" class="py-12 bg-white">
+            <div class="container mx-auto text-center">
+                <h2 class="text-3xl font-bold mb-6">Awards and Honors</h2>
+                <ul class="text-gray-600 list-disc list-inside">
+                    <li>Excellence Award, AIM Innovation Track, Yonsei University (2021)</li>
+                    <li>Grand Prize, Yonsei CS Graduation Work Exhibition (2020)</li>
+                </ul>
+            </div>
+        </section>
 
-    ul {
-      list-style-type: none;
-      padding-left: 0;
-    }
+        <!-- Contact Section -->
+        <section id="contact" class="py-12 bg-gray-100">
+            <div class="container mx-auto text-center">
+                <h2 class="text-3xl font-bold mb-6">Contact</h2>
+                <p class="text-gray-600 mb-6">Feel free to reach out for collaborations or inquiries.</p>
+                <form action="#" method="POST" class="max-w-md mx-auto">
+                    <input type="text" class="block w-full px-4 py-2 mb-3 border rounded-md" placeholder="Your Name">
+                    <input type="email" class="block w-full px-4 py-2 mb-3 border rounded-md" placeholder="Email Address">
+                    <textarea class="block w-full px-4 py-2 mb-3 border rounded-md" rows="4" placeholder="Your Message"></textarea>
+                    <button type="submit" class="w-full bg-blue-500 text-white px-4 py-2 rounded-md hover:bg-blue-600">Send Message</button>
+                </form>
+            </div>
+        </section>
+    </main>
 
-    li {
-      margin-bottom: 10px;
-    }
-  </style>
-  <title>About TikaToka</title>
-</head> 
-
-<body>
-
-  <nav class="navbar navbar-expand-lg navbar-light bg-light">
-    <div class="container">
-      <a class="navbar-brand" href="#">My CV</a>
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
-        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse" id="navbarNav">
-        <ul class="navbar-nav ml-auto">
-          <li class="nav-item">
-            <a class="nav-link" href="#about">About</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#experience">Experience</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#skills">Skills</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#contact">Contact</a>
-          </li>
-        </ul>
-      </div>
-    </div>
-  </nav>
-
-  <section id="about" class="container">
-    <h1>About Me</h1>
-    <p></p>
-    <img src="path/to/your/image.jpg" alt="My Photo" style="width: 200px; border-radius: 50%;">
-    <p>Hello, Im Joochan Joseph Kim from Republic of Korea.</p>
-  </section>
-
-  <section id="experience" class="container">
-    <h1>Experience</h1>
-    <p></p>
-    <div class="row">
-      <div class="col-md-9">
-        <h2>Master Student of Computer Science and Engineering</h2>
-        <h3>@Seoul National University</h3>
-        <h4>From 2022.03 To ~ing</h4>
-        <p>Donec ut elit vel nunc tempus fermentum. Proin mattis massa in scelerisque aliquam. Quisque tempor maximus
-          sapien, nec pulvinar elit convallis non. Fusce vulputate ipsum et erat molestie, ac rhoncus felis fermentum.
-          Aenean nec elementum enim, non faucibus turpis.</p>
-      </div>
-      <div class="col-md-3">
-        <img src="img/snu.png" alt="University Logo" style="width: 100%;">
-      </div>
-    </div>
-
-    <div class="row">
-      <div class="col-md-9">
-        <h2>Bachlor of Computer Science</h2>
-        <h3>@Yonsei University</h3>
-        <h4>From 2016.03 To 2021.08</h4>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum in ligula nisl. Suspendisse potenti. Sed a
-          lacus leo. Nulla vel nisi neque. Integer dapibus est non lacus consectetur, in eleifend mi aliquam.</p>
-        <h2>Master Student of Computer Science and Enginerring</h2>
-      </div>
-      <div class="col-md-3">
-        <img src="img/yonsei.png" alt="University Logo" style="width: 100%;">
-      </div>
-    </div>
-  
-    <div class="row">
-      <div class="col-md-9">
-        <h2>UI Designer - DEF Studio</h2>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum in ligula nisl. Suspendisse potenti. Sed a
-          lacus leo. Nulla vel nisi neque. Integer dapibus est non lacus consectetur, in eleifend mi aliquam.</p>
-      </div>
-      <div class="col-md-3">
-        <!-- Placeholder for no logo -->
-      </div>
-  </section>
-
-  <section id="publications" class="container">
-    <p></p>
-    <h1>Publications</h1>
-  
-    <div class="row">
-      <div class="col-md-6">
-        <h2 class="publication-title"><a href="https://arxiv.org/abs/2210.12617" target="_blank">Modal-specific Pseudo Query Generation for Video Corpus Moment Retrieval</a></h2>
-        <p>Minjoon Jung, Seongho Choi, Joochan Kim, Jin-Hwa Kim, Byoung-Tak Zhang</p>
-        <p>EMNLP 2022 Main Conference</p>
-      </div>
-    </div>
-  
-  </section>
-
-  <section id="skills" class="container">
-    <h1>Skills</h1> 
-    <p></p>
-    <ul>
-      <li>Python</li>
-      <li>Pytorch</li>
-      <li>Tensorflow</li>
-      <li>Artificial Intelligence</li>
-      <li>Natural Language Processing</li>
-      <li>Computer Vision</li>
-    </ul>
-  </section>
-
-  <style>
-    .contact-image {
-      height: 150px;
-      object-fit: contain;
-    }
-  </style>
-
-  <section id="contact" class="container">
-    <h1>Contact Me</h1>
-    <p></p>
-    <div class="row">
-      <div class="col-md-3">
-        <a href="https://www.linkedin.com/in/tikatoka/" target="_blank">
-          <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/ca/LinkedIn_logo_initials.png/800px-LinkedIn_logo_initials.png" alt="LinkedIn" class="contact-image">
-        </a>
-      </div>
-      <div class="col-md-3">
-        <a href="https://github.com/TikaToka" target="_blank">
-          <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/91/Octicons-mark-github.svg/2048px-Octicons-mark-github.svg.png" alt="GitHub" class="contact-image">
-        </a>
-      </div>
-      <div class="col-md-3">
-        <a href="https://scholar.google.com/citations?user=8DtoB2QAAAAJ&hl=ko" target="_blank">
-          <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/c7/Google_Scholar_logo.svg/2048px-Google_Scholar_logo.svg.png" alt="Google Scholar" class="contact-image">
-        </a>
-      </div>
-      <div class="col-md-3">
-        <a href="mailto:jckim@bi.snu.ac.kr">
-          <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/2a/High-contrast-emblem-mail.svg/768px-High-contrast-emblem-mail.svg.png" alt="Email" class="contact-image"">
-        </a>
-      </div>
-    </div>
-  </section>
-
-  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-  <script src="https://unpkg.com/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.min.js"></script>
-
+    <!-- Footer -->
+    <footer class="bg-white shadow text-center py-4">
+        <p class="text-gray-600">© 2023 Joochan Kim. All rights reserved.</p>
+        <p class="text-gray-600">Connect with me on <a href="https://www.linkedin.com/in/tikatoka/" class="text-blue-500 hover:underline">LinkedIn</a></p>
+    </footer>
 </body>
-
 </html>

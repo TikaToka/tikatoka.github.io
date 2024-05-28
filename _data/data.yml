@@ -9,12 +9,12 @@ sidebar:
 
     # Profile information
     name: Joochan Kim
-    tagline: Full
+    tagline: Multimodal AI Researcher
     avatar: avatar.jpg #place a 100x100 picture inside /assets/images/ folder and provide the name of the file below
 
     # Sidebar links
     email: tikatoka@snu.ac.kr
-    phone:  _65 8654 6234
+    phone:  +65 8654 6234
     timezone: SG/MY
     citizenship: South Korea
     website: #do not add http://
@@ -65,13 +65,7 @@ education:
         university: Seoul National University
         time: 2022 - 2024
         details: |
-          Describe your study here lorem ipsum dolor sit amet, consectetuer
-          adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum
-          sociis natoque penatibus et magnis dis parturient montes, nascetur
-          ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu,
-          pretium quis, sem.
-            - Bullet point
-            - Bullet point
+          Member of BioIntelligence Lab, supervised by Byoung-Tak Zhang
       - degree: BSc in Computer Science
         university: Yonsei University
         time: 2016 - 2021
@@ -126,45 +120,35 @@ experiences:
       #       - Bullet point
 
 certifications:
-      title: 
+      title: Award
       list:
-        - name: CV Builder
-          start: 2020
-          end: 2021
-          organization: Microsoft
-          credentialid: 111-222
-          credentialurl: www.google.com
-          credentialname: Google
-          details: |
-            Details about cert. Lorem ipsum dolor sit amet, consectetur
-            adipiscing elit.
-            Nullam eget orci purus. Nullam ultrices neque nibh.
-            Aenean fermentum, felis vulputate suscipit accumsan,
-            sem enim bibendum augue, sed convallis arcu lacus at dui.
-            Pellentesque et nibh suscipit, vestibulum turpis eu, semper tortor.
-            Praesent felis nibh, eleifend id eleifend id, dictum id enim.
-            Praesent venenatis erat non augue suscipit consectetur.
-
-            Second paragraph. Sed eleifend enim ante, vitae efficitur purus
-            fringilla vel. Ut euismod, sem sed vulputate venenatis,
-            justo diam viverra velit, sed rhoncus leo leo eu justo.
-            Suspendisse placerat risus ante, sed porta nisi blandit at.
-        - name: Git learning
-          start: 2019
+        - name: AIM Innovation Track Online Student Performance Presentation
+          start: Jan. 2021
           end:
-          organization: Microsoft
-          credentialid: 111-222
-          credentialurl: www.github.com
-          credentialname: Github
+          organization: LINC+,  College of Enginerring
+          credentialid:
+          credentialurl:
+          credentialname: Yonsei University
           details: |
-            Older certification. Lorem ipsum dolor sit amet, consectetur
-            adipiscing elit.
-            Nullam eget orci purus. Nullam ultrices neque nibh.
-            Aenean fermentum, felis vulputate suscipit accumsan,
-            sem enim bibendum augue, sed convallis arcu lacus at dui.
-            Pellentesque et nibh suscipit, vestibulum turpis eu, semper tortor.
-            Praesent felis nibh, eleifend id eleifend id, dictum id enim.
-            Praesent venenatis erat non augue suscipit consectetur.
+            Excellence Award
+        - name: Graduation Work Exhibition,
+          start: Dec. 2020
+          end:
+          organization: Department of Computer Science
+          credentialid:
+          credentialurl:
+          credentialname: Yonsei University
+          details: |
+          Grand Prize
+        - name: Graduation Work Exhibition,
+          start: Aug. 2020
+          end:
+          organization: Department of Computer Science
+          credentialid:
+          credentialurl:
+          credentialname: Yonsei University
+          details: |
+          Excellence Award
 
 projects:
     title: Projects
@@ -194,30 +178,25 @@ projects:
         tagline: "A responsive Bootstrap one page theme designed to help app developers promote their mobile apps"
 
 oss:
-    title: OSS Contributions
-    intro: >
-      You can list your open source software contributions in this
-      section. Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-      Vestibulum et ligula in nunc bibendum fringilla a eu lectus.
+    title:
+    intro:
     contributions:
-      - title: Tempo
-        link: "#"
-        tagline: "A responsive website template designed to help startups promote their products or services and to attract users &amp; investors"
+      - title:
+        link:
+        tagline:
 
-      - title: Atom
-        link: "#"
-        tagline: "A comprehensive website template solution for startups/developers to market their mobile apps."
+      - title:
+        link:
+        tagline:
 
-      - title: Delta
-        link: "#"
-        tagline: "A responsive Bootstrap one page theme designed to help app developers promote their mobile apps"
+      - title:
+        link:
+        tagline:
 
 publications:
     title: Publications
     intro: |
-      You can list your publications in this section. Lorem ipsum dolor sit
-      amet, consectetur adipiscing elit. Vestibulum et ligula in nunc
-      bibendum fringilla a eu lectus.
+      LIst
     papers:
       - title: Continual Vision-and-Language Navigation
         link: https://arxiv.org/abs/2403.15049

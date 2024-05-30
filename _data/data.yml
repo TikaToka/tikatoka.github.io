@@ -141,7 +141,7 @@ certifications:
           Excellence Award
 
 projects:
-    title: Projects
+    title:
     intro:
     assignments:
       - title:
@@ -182,8 +182,7 @@ oss:
 
 publications:
     title: Publications
-    intro: |
-      LIst
+    intro:
     papers:
       - title: Continual Vision-and-Language Navigation
         link: https://arxiv.org/abs/2403.15049

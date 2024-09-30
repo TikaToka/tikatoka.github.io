@@ -188,18 +188,18 @@ publications:
     papers:
       - title: Continual Vision-and-Language Navigation
         link: https://arxiv.org/abs/2403.15049
-        authors: Seongjun Jeong, Gi-Cheon Kang, Seongho Choi, Joochan Kim, Byoung-Tak Zhang
+        authors: Seongjun Jeong, Gi-Cheon Kang, Seongho Choi, <b>Joochan Kim</b>, Byoung-Tak Zhang
         conference: arXiv Preprint, 2024
 
-      - title: Overcoming Weak Visual-Textual Alignment for Video Moment Retrieval
+      - title: Background-aware Moment Detection for Video Moment Retrieval
         link: https://arxiv.org/abs/2306.02728
-        authors: Minjoon Jung, Youwon Jang, Seongho Choi, Joochan Kim, Jin-Hwa Kim, Byoung-Tak Zhang
-        conference: arXiv Preprint, 2023
+        authors: Minjoon Jung, Youwon Jang, Seongho Choi, <b>Joochan Kim</b>, Jin-Hwa Kim, Byoung-Tak Zhang
+        conference: WACV 2025
 
       - title: Modal-specific Pseudo Query Generation for Video Corpus Moment Retrieval
         link: https://aclanthology.org/2022.emnlp-main.530/
-        authors: Minjoon Jung, SeongHo Choi, JooChan Kim, Jin-Hwa Kim, Byoung-Tak Zhang
-        conference: Proceedings of the 2022 Conference on Empirical Methods in Natural Language Processing
+        authors: Minjoon Jung, SeongHo Choi, <b>Joochan Kim</b>, Jin-Hwa Kim, Byoung-Tak Zhang
+        conference: EMNLP 2022
 
 skills:
     title: Skills &amp; Proficiency

@@ -58,25 +58,23 @@ career-profile:
     title: Career Profile
     summary: |
       Hi. I'm Joochan Kim, who is pursuing to study Multimodal AI, especially with Robotics and LLMs.
+
 education:
     title: Education
     info:
       - degree: MSc in Computer Science and Engineering
         university: Seoul National University
         time: 2022 - 2024
+        grade: 3.98/4.5
         details: |
-          Member of BioIntelligence Lab, supervised by Byoung-Tak Zhang
+          Member of BioIntelligence Lab., supervised by Byoung-Tak Zhang
       - degree: BSc in Computer Science
         university: Yonsei University
         time: 2016 - 2021
+        grade: 3.4/4.5
         details: |
-          Describe your study here lorem ipsum dolor sit amet, consectetuer
-          adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum
-          sociis natoque penatibus et magnis dis parturient montes, nascetur
-          ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu,
-          pretium quis, sem.
-            - Bullet point
-            - Bullet point
+          Capstone Project Related to Natural Language Processing
+        
 
 experiences:
     title: Experiences
@@ -115,7 +113,7 @@ certifications:
       title: Award
       list:
         - name: AIM Innovation Track Online Student Performance Presentation
-          start: Jan. 2021
+          start: Dec. 2020
           end:
           organization: LINC+,  College of Enginerring
           credentialid:

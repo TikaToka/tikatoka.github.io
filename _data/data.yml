@@ -14,10 +14,10 @@ sidebar:
 
     # Sidebar links
     email: tikatoka@snu.ac.kr
-    phone: +65 8654 6234
-    timezone: SG/MY
+    phone: +82 10 6295 5317
+    timezone: KST
     citizenship: South Korea
-    website: #do not add http://
+    website: tikatoka.github.io
     linkedin: tikatoka
     xing: 
     github: tikatoka
@@ -82,10 +82,12 @@ experiences:
     title: Experiences
     info:
       - role: Research Officer
-        time: 03.2024 - Present
+        time: 03.2024 - 08. 2024
         company: Agency for Science, Technology, And Research
         details: |
-          Internship 
+          As selected 'Singapore International Pre-Graduate Award', I have participated
+          into the project to utilize multimodal Large Language Models into
+          Robotics Task, under supervision with Dr. Haiyue Zhy at SIMTech.
       # - role: Senior Software Engineer
       #   time: 2014 - 2015
       #   company: Google, London

@@ -28,7 +28,7 @@ sidebar:
     stack-overflow: # Number/Username, e.g. 123456/alandoe
     codewars:
     goodreads: # Number-Username, e.g. 123456-alandoe
-    pdf: ./assets/resume.pdf
+    pdf: ./assets/cv.pdf
 
     languages:
       title: Languages
@@ -43,7 +43,7 @@ sidebar:
         #   level: Professional
 
     interests:
-      title: Interests
+      title: Hobby
       info:
         - item: Skiing
           link:

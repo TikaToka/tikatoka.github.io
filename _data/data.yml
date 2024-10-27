@@ -212,16 +212,16 @@ skills:
         level: 80%
 
       - name: Tensorflow
-        level: 50%
+        level: 25%
 
-      # - name: HTML5 & CSS
-      #   level: 95%
+      - name: ROS
+        level: 10%
 
-      # - name: Ruby on Rails
-      #   level: 85%
+      - name: AWS
+        level: 15%
 
-      # - name: Sketch & Photoshop
-      #   level: 60%
+      - name: Git
+        level: 15%
 
 footer: >
     Designed with <i class="fas fa-heart"></i> by <a href="http://themes.3rdwavemedia.com" target="_blank" rel="nofollow">Xiaoying Riley</a>

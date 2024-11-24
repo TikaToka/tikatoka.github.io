@@ -14,10 +14,10 @@ sidebar:
 
     # Sidebar links
     email: tikatoka@snu.ac.kr
-    phone: +82 10 6295 5317
+    # phone: +82 10 6295 5317
     timezone: KST
     citizenship: South Korea
-    website: tikatoka.github.io
+    website: https://slashpage.com/all-about-tika
     linkedin: tikatoka
     xing: 
     github: tikatoka
@@ -54,7 +54,7 @@ sidebar:
 career-profile:
     title: Career Profile
     summary: |
-      Hi. I'm Joochan Kim, who is pursuing to study Multimodal AI, especially with Robotics and LLMs.
+      This page will no longer be updated. Please visit https://slashpage.com/all-about-tika for the latest information.
 
 education:
     title: Education

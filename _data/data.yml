@@ -121,7 +121,7 @@ certifications:
           credentialname: Yonsei University
           details: |
             Excellence Award
-        - name: Graduation Work Exhibition,
+        - name: Graduation Work Exhibition
           start: Dec. 2020
           end:
           organization: Department of Computer Science
@@ -130,7 +130,7 @@ certifications:
           credentialname: Yonsei University
           details: |
             Grand Prize
-        - name: Graduation Work Exhibition,
+        - name: Graduation Work Exhibition
           start: Aug. 2020
           end:
           organization: Department of Computer Science

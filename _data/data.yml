@@ -9,7 +9,7 @@ sidebar:
 
     # Profile information
     name: Joochan Kim
-    tagline: Multimodal AI Researcher
+    tagline: AI Researcher
     avatar: avatar.jpg #place a 100x100 picture inside /assets/images/ folder and provide the name of the file below
 
     # Sidebar links
@@ -54,7 +54,10 @@ sidebar:
 career-profile:
     title: Career Profile
     summary: |
-      This page will no longer be updated. Please visit https://slashpage.com/all-about-tika for the latest information.
+
+    I am a MSc graduate at Seoul National University in the Department of Computer Science and Engineering.
+    I am broadly interested in the intersections between Language, Vision, and Robots—in other words, Multimodal and Embodied AI.
+    <b>This page will no longer be updated. Please visit <a href="https://slashpage.com/all-about-tika">NEW PERSONAL PAGE</a> for the latest information.</b>
 
 education:
     title: Education

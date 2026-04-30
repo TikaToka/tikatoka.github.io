@@ -1,0 +1,9 @@
+<div class="topbar">
+    <nav class="topnav" aria-label="Primary">
+        <a href="{{ '/' | relative_url }}" class="nav-link{% if page.url == '/' %} active{% endif %}">Home</a>
+        <a href="{{ '/blog/' | relative_url }}" class="nav-link{% if page.url contains '/blog' %} active{% endif %}">Blog</a>
+    </nav>
+    <button id="theme-toggle" class="theme-toggle" type="button" aria-label="Toggle dark mode" title="Toggle dark mode">
+        <span aria-hidden="true" id="theme-icon">🌙</span>
+    </button>
+</div>

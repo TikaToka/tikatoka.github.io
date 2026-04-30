@@ -1,295 +1,164 @@
-<!DOCTYPE HTML>
-<html lang="en">
+---
+layout: default
+permalink: /
+---
 
-<head>
-    <!-- Google tag (gtag.js) -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=G-YKQQNE6PX6"></script>
-    <script>
-        window.dataLayer = window.dataLayer || [];
-          function gtag(){dataLayer.push(arguments);}
-          gtag('js', new Date());
-    
-          gtag('config', 'G-YKQQNE6PX6');
-    </script>
-    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<header class="hero">
+    <div class="hero-text">
+        <h1 class="name">Joochan Kim</h1>
+        <p>I am an incoming PhD student at <a href="https://purdue.edu/">Purdue</a>, starting fall 2026, advised by <a href="https://ziranw.github.io/">Ziran Wang</a>. I am currently a research intern at <a href="https://cai.kist.re.kr/">KIST</a> in Seoul, working on Embodied AI, with a focus on Vision-Language-Action models, under the mentorship of <a href="https://www.hwasup.net/">Hwasup Lim</a> and Tackgeun You.</p>
+        <p>I received my M.S. from <a href="http://cse.snu.ac.kr">SNU</a>, advised by <a href="https://bi.snu.ac.kr/members/byoung-tak-zhang.html">Byoung-Tak Zhang</a>. During my master's program, I also interned at <a href="https://www.a-star.edu.sg/simtech/research/adaptive-robotics-and-mechatronics-(arm)">SIMTech, A*STAR</a>, where I was mentored by <a href="https://h-y-zhu.github.io/">Haiyue Zhu</a>. I received my B.S. from <a href="https://cs.yonsei.ac.kr/csai/index.do">Yonsei University</a>.</p>
+        <nav class="contact" aria-label="Contact links">
+            <a href="mailto:tikatoka@snu.ac.kr">Email</a>
+            <a href="data/jckim-cv.pdf">CV</a>
+            <a href="https://scholar.google.com/citations?user=8DtoB2QAAAAJ">Scholar</a>
+            <a href="https://www.linkedin.com/in/tikatoka/">LinkedIn</a>
+            <a href="https://github.com/TikaToka">GitHub</a>
+        </nav>
+    </div>
+    <div class="hero-photo">
+        <a href="images/jckim.jpg" aria-label="Profile photo of Joochan Kim">
+            <img class="profile-photo" alt="Profile photo of Joochan Kim" src="images/jckim.jpg">
+        </a>
+    </div>
+</header>
 
-    <title>Joochan Kim</title>
+<main>
+    <section id="research" aria-labelledby="research-heading">
+        <h2 id="research-heading">Research</h2>
+        <p class="section-intro">I'm interested in multimodal AI, generative AI, and data-center AI. Most of my research is about understanding video and images with language guidance, thereby developing embodied AI from internet AI. Some papers with <span class="highlight">highlight</span> are papers with main contributions.</p>
 
-    <meta name="author" content="Joochan Kim">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="shortcut icon" href="images/favicon/favicon.ico" type="image/x-icon">
-    <link rel="stylesheet" type="text/css" href="stylesheet.css">
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&display=swap" rel="stylesheet">
+        <div class="papers">
+            <article class="paper highlight">
+                <img class="paper-thumb" src="images/neuripsw2025.png" alt="The Losing Winner paper figure">
+                <div class="paper-body">
+                    <span class="papertitle">The Losing Winner: An LLM Agent that Predicts the Market but Loses Money</span>
+                    <div class="paper-authors">
+                        <a href="https://greeksharifa.github.io/">Youwon Jang*</a>,
+                        <strong>Joochan Kim*</strong>,
+                        <a href="https://bi.snu.ac.kr">Byoung-Tak Zhang</a>
+                    </div>
+                    <div class="paper-venue"><em>NeurIPS Workshop on Generative AI in Finance</em>, 2025</div>
+                    <div class="paper-links">
+                        <a class="paper-badge paper-badge--paper" href="https://doi.org/10.13140/RG.2.2.26292.51847">
+                            {% include icons/paper.svg %}<span>Paper</span>
+                        </a>
+                        <a class="paper-badge paper-badge--poster" href="data/69.pdf">
+                            {% include icons/poster.svg %}<span>Poster</span>
+                        </a>
+                    </div>
+                    <p class="paper-tldr">Fine-tuning an LLM for Bitcoin market state prediction improves accuracy but paradoxically worsens trading returns, exposing the dangers of proxy objectives and reward hacking in financial AI.</p>
+                </div>
+            </article>
 
-</head>
+            <article class="paper">
+                <img class="paper-thumb" src="images/cvln.png" alt="Continual Vision-and-Language Navigation paper figure">
+                <div class="paper-body">
+                    <span class="papertitle">Continual Vision-and-Language Navigation</span>
+                    <div class="paper-authors">
+                        Seongjun Jeong, <a href="https://gicheonkang.com/">Gi-Cheon Kang</a>, Seongho Choi, <strong>Joochan Kim</strong>, <a href="https://cse.snu.ac.kr/en/people/faculty/55">Byoung-Tak Zhang</a>
+                    </div>
+                    <div class="paper-venue"><em>BMVC</em>, 2025</div>
+                    <div class="paper-links">
+                        <a class="paper-badge paper-badge--paper" href="https://bmvc2025.bmva.org/proceedings/84">
+                            {% include icons/paper.svg %}<span>Paper</span>
+                        </a>
+                    </div>
+                    <p class="paper-tldr">We propose Continual Vision-and-Language Navigation (CVLN) paradigm along with two methods for CVLN: Perplexity Replay (PerpR) and Episodic Self-Replay (ESR).</p>
+                </div>
+            </article>
 
-<body>
-    <table style="width:100%;max-width:800px;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;">
-        <tbody>
-            <tr style="padding:0px">
-                <td style="padding:0px">
-                    <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;">
-                        <tbody>
-                            <tr style="padding:0px">
-                                <td style="padding:2.5%;width:63%;vertical-align:middle">
-                                    <p class="name" style="text-align: center;">
-                                        Joochan Kim
-                                    </p>
-                                    <p>I am an incoming PhD student at <a href="https://purdue.edu/">Purdue</a>, starting fall 2026, advised by <a href="https://ziranw.github.io/">Ziran Wang</a>. I am currently a research intern at <a href="https://cai.kist.re.kr/">KIST</a> in Seoul, working on Embodied AI, with a focus on Vision-Language-Action models, under the mentorship of <a href='https://www.hwasup.net/'>Hwasup Lim</a> and Tackgeun You.
-                                    </p>
-                                    <p>
-                                        I received my M.S. from <a href="http://cse.snu.ac.kr">SNU</a>, advised by <a href="https://bi.snu.ac.kr/members/byoung-tak-zhang.html">Byoung-Tak Zhang</a>. During my master's program, I also interned at <a href="https://www.a-star.edu.sg/simtech/research/adaptive-robotics-and-mechatronics-(arm)">SIMTech, A*STAR</a>, where I was mentored by <a href='https://h-y-zhu.github.io/'>Haiyue Zhu</a>. I received my B.S. from <a href='https://cs.yonsei.ac.kr/csai/index.do'>Yonsei University</a>.
-                                    </p>
-                                    <p style="text-align:center">
-                                        <a href="mailto:tikatoka@snu.ac.kr">Email</a> &nbsp;/&nbsp;
-                                        <a href="data/jckim-cv.pdf">CV</a> &nbsp;/&nbsp;
-                                        <a href="https://scholar.google.com/citations?user=8DtoB2QAAAAJ">Scholar</a> &nbsp;/&nbsp;
-                                        <a href="https://www.linkedin.com/in/tikatoka/">LinkedIn</a> &nbsp;/&nbsp;
-                                        <a href="https://github.com/TikaToka">Github</a>
-                                    </p>
-                                </td>
-                                <td style="padding:2.5%;width:37%;max-width:37%">
-                                    <a href="images/jckim.jpg"><img style="width:100%;max-width:100%;object-fit: cover; border-radius: 50%;" alt="profile photo" src="images/jckim.jpg" class="hoverZoomLink"></a>
-                                </td>
-                            </tr>
-                        </tbody>
-                    </table>
-                    <!-- <div style="text-align: center; background-color: #ffe6e6; padding: 12px; border-radius: 8px; margin-top: 15px; margin-bottom: 15px;"> -->
-                        <!-- <p style="margin: 0; font-weight: 600; color: #cc0000;">I am actively looking for a Ph.D. position. If anyone is interested, please contact me via email or LinkedIn!</p> -->
-                    <!-- </div> -->
-                    <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;">
-                        <tbody>
-                            <tr>
-                                <td style="padding:16px;width:100%;vertical-align:middle">
-                                    <h2>Research</h2>
-                                    <p>
-                                        I'm interested in multimodal AI, generative AI, and data-center AI. Most of my research is about understanding video and images with language guidance, thereby developing embodied AI from internet AI. Some papers with
-                                        <span
-                                        class="highlight">highlight</span> are papers with main contributions.
-                                    </p>
-                                </td>
-                            </tr>
-                        </tbody>
-                    </table>
-                    <table style="width:100%;border:0px;border-spacing:0px 10px;border-collapse:separate;margin-right:auto;margin-left:auto;">
-                        <tbody>
-                            <tr class="paper-row-highlight">
-                                <td style="padding:16px;width:20%;vertical-align:middle">
-                                    <div class="one">
-                                        <img src='images/neuripsw2025.png' width="160">
-                                    </div>
-                                </td>
-                                <td style="padding:8px;width:80%;vertical-align:middle">
-                                    <span class="papertitle">The Losing Winner: An LLM Agent that Predicts the Market but Loses Money</span>
-                                    <br>
-                                    <a href="https://greeksharifa.github.io/">Youwon Jang*</a>,
-                                    <strong>Joochan Kim*</strong>,
-                                    <a href="https://bi.snu.ac.kr">Byoung-Tak Zhang</a>
-                                    <br>
-                                    <em>NeurIPS Workshop on Generative AI in Finance</em>, 2025
-                                    <br>
-                                    <a href="https://doi.org/10.13140/RG.2.2.26292.51847">paper</a> /
-                                    <a href="data/69.pdf">poster</a>
-                                    <p></p>
-                                    <p>Fine-tuning an LLM for Bitcoin market state prediction improves accuracy but paradoxically worsens trading returns, exposing the dangers of proxy objectives and reward hacking in financial AI.</p>
-                                </td>
-                            </tr>
+            <article class="paper highlight">
+                <img class="paper-thumb" src="images/ordinalbias.png" alt="Ordinal bias in action recognition paper figure">
+                <div class="paper-body">
+                    <span class="papertitle">Exploring Ordinal Bias in Action Recognition for Instructional Videos</span>
+                    <div class="paper-authors">
+                        <strong>Joochan Kim</strong>, <a href="https://minjoong507.github.io">Minjoon Jung</a>, <a href="https://cse.snu.ac.kr/en/people/faculty/55">Byoung-Tak Zhang</a>
+                    </div>
+                    <div class="paper-venue"><em>ICLR Workshop on Spurious Correlation and Shortcut Learning</em>, 2025</div>
+                    <div class="paper-links">
+                        <a class="paper-badge paper-badge--arxiv" href="https://arxiv.org/abs/2504.06580">
+                            {% include icons/arxiv.svg %}<span>arXiv</span>
+                        </a>
+                        <a class="paper-badge paper-badge--poster" href="data/32.pdf">
+                            {% include icons/poster.svg %}<span>Poster</span>
+                        </a>
+                    </div>
+                    <p class="paper-tldr">Ordinal bias leads action recognition models to over-rely on dominant action pairs, inflating performance and lacking true video comprehension even when challenged by action masking and sequence shuffling.</p>
+                </div>
+            </article>
 
-                            <tr class="paper-row">
-                                <td style="padding:16px;width:20%;vertical-align:middle">
-                                    <div class="one">
-                                        <img src='images/cvln.png' width="160">
-                                    </div>
-                                </td>
-                                <td style="padding:8px;width:80%;vertical-align:middle">
-                                    <span class="papertitle">Continual Vision-and-Language Navigation</span>
-                                    <br> Seongjun Jeong, <a href='https://gicheonkang.com/'>Gi-Cheon Kang</a>, Seongho Choi, <strong>Joochan Kim</strong>, <a href="https://cse.snu.ac.kr/en/people/faculty/55">Byoung-Tak Zhang</a>
-                                    <br>
-                                    <em>BMVC</em>, 2025
-                                    <br>
-                                    <a href="https://bmvc2025.bmva.org/proceedings/84">paper</a>
-                                    <p></p>
-                                    <p>We propose Continual Vision-and-Language Navigation (CVLN) paradigm along with two methods for CVLN: Perplexity Replay (PerpR) and Episodic Self-Replay (ESR).</p>
-                                </td>
-                            </tr>
+            <article class="paper">
+                <img class="paper-thumb" src="images/bmdetr.png" alt="BM-DETR paper figure">
+                <div class="paper-body">
+                    <span class="papertitle">Background-aware Moment Detection for Video Moment Retrieval</span>
+                    <div class="paper-authors">
+                        <a href="https://minjoong507.github.io">Minjoon Jung</a>, <a href="https://github.com/greeksharifa">Youwon Jang</a>, Seongho Choi, <strong>Joochan Kim</strong>, <a href="https://wityworks.com/">Jin-Hwa Kim</a>, <a href="https://cse.snu.ac.kr/en/people/faculty/55">Byoung-Tak Zhang</a>
+                    </div>
+                    <div class="paper-venue"><em>WACV</em>, 2025</div>
+                    <div class="paper-links">
+                        <a class="paper-badge paper-badge--arxiv" href="https://arxiv.org/abs/2306.02728">
+                            {% include icons/arxiv.svg %}<span>arXiv</span>
+                        </a>
+                        <a class="paper-badge paper-badge--code" href="https://github.com/minjoong507/BM-DETR">
+                            {% include icons/code.svg %}<span>Code</span>
+                        </a>
+                    </div>
+                    <p class="paper-tldr">We propose Background-aware Moment Detection TRansformer (BM-DETR), which carefully adopts a contrastive approach for robust prediction. BM-DETR achieves state-of-the-art performance on various benchmarks while being highly efficient.</p>
+                </div>
+            </article>
 
-                            <tr class="paper-row-highlight">
-                                <td style="padding:16px;width:20%;vertical-align:middle">
-                                    <div class="one">
-                                        <img src='images/ordinalbias.png' width="160">
-                                    </div>
-                                </td>
-                                <td style="padding:8px;width:80%;vertical-align:middle">
-                                    <span class="papertitle">Exploring Ordinal Bias in Action Recognition for Instructional Videos</span>
-                                    <br>
-                                    <strong>Joochan Kim</strong>, <a href="https://minjoong507.github.io">Minjoon Jung</a>, <a href="https://cse.snu.ac.kr/en/people/faculty/55">Byoung-Tak Zhang</a>
-                                    <br>
-                                    <em>ICLR Workshop on Spurious Correlation and Shortcut Learning</em>, 2025
-                                    <br>
-                                    <a href="https://arxiv.org/abs/2504.06580">paper</a> / <a href="data/32.pdf">poster</a>
-                                    <p></p>
-                                    <p>Ordinal bias leads action recognition models to over-rely on dominant action pairs, inflating performance and lacking true video comprehension even when challenged by action masking and sequence shuffling.</p>
-                                </td>
-                            </tr>
+            <article class="paper">
+                <img class="paper-thumb" src="images/vlncm.png" alt="VLN-CM paper figure">
+                <div class="paper-body">
+                    <span class="papertitle">Zero-Shot Vision-and-Language Navigation with Collision Mitigation in Continuous Environment</span>
+                    <div class="paper-authors">
+                        Seongjun Jeong, <a href="https://gicheonkang.com/">Gi-Cheon Kang</a>, <strong>Joochan Kim</strong>, <a href="https://cse.snu.ac.kr/en/people/faculty/55">Byoung-Tak Zhang</a>
+                    </div>
+                    <div class="paper-venue"><em>CVPR Workshop on Embodied AI</em>, 2025</div>
+                    <div class="paper-links">
+                        <a class="paper-badge paper-badge--arxiv" href="https://arxiv.org/abs/2410.17267">
+                            {% include icons/arxiv.svg %}<span>arXiv</span>
+                        </a>
+                    </div>
+                    <p class="paper-tldr">We propose the zero-shot Vision-and-Language Navigation with Collision Mitigation (VLN-CM), which takes low-level actions as an output while considering possible collisions.</p>
+                </div>
+            </article>
 
-                            <tr class="paper-row">
-                                <td style="padding:16px;width:20%;vertical-align:middle">
-                                    <div class="one">
-                                        <img src='images/bmdetr.png' width="160">
-                                    </div>
-                                </td>
-                                <td style="padding:8px;width:80%;vertical-align:middle">
-                                    <span class="papertitle">Background-aware Moment Detection for Video Moment Retrieval</span>
-                                    <br>
-                                    <a href="https://minjoong507.github.io">Minjoon Jung</a>, <a href='https://github.com/greeksharifa'>Youwon Jang</a>, Seongho Choi, <strong>Joochan Kim</strong>, <a href='https://wityworks.com/'>Jin-Hwa Kim</a>, <a href="https://cse.snu.ac.kr/en/people/faculty/55">Byoung-Tak Zhang</a>
-                                    <br>
-                                    <em>WACV</em>, 2025
-                                    <br>
-                                    <a href="https://arxiv.org/abs/2306.02728">paper</a> / <a href="https://github.com/minjoong507/BM-DETR">code</a>
-                                    <p></p>
-                                    <p>We propose Background-aware Moment Detection TRansformer (BM-DETR), which carefully adopts a contrastive approach for robust prediction. BM-DETR achieves state-of-the-art performance on various benchmarks while being
-                                        highly efficient.</p>
-                                </td>
-                            </tr>
+            <article class="paper">
+                <img class="paper-thumb" src="images/mpgn.png" alt="MPGN paper figure">
+                <div class="paper-body">
+                    <span class="papertitle">Modal-specific Pseudo Query Generation for Video Corpus Moment Retrieval</span>
+                    <div class="paper-authors">
+                        <a href="https://minjoong507.github.io">Minjoon Jung</a>, Seongho Choi, <strong>Joochan Kim</strong>, <a href="https://wityworks.com/">Jin-Hwa Kim</a>, <a href="https://cse.snu.ac.kr/en/people/faculty/55">Byoung-Tak Zhang</a>
+                    </div>
+                    <div class="paper-venue"><em>EMNLP</em>, 2022</div>
+                    <div class="paper-links">
+                        <a class="paper-badge paper-badge--arxiv" href="https://arxiv.org/abs/2210.12617">
+                            {% include icons/arxiv.svg %}<span>arXiv</span>
+                        </a>
+                    </div>
+                    <p class="paper-tldr">We propose a self-supervised learning framework: Modal-specific Pseudo Query Generation Network (MPGN). First, MPGN selects candidate temporal moments via subtitle-based moment sampling. Then, it generates pseudo queries exploiting both visual and textual information from the selected temporal moments.</p>
+                </div>
+            </article>
+        </div>
+    </section>
 
-                            <tr class="paper-row">
-                                <td style="padding:16px;width:20%;vertical-align:middle">
-                                    <div class="one">
-                                        <img src='images/vlncm.png' width="160">
-                                    </div>
-                                </td>
-                                <td style="padding:8px;width:80%;vertical-align:middle">
-                                    <span class="papertitle">Zero-Shot Vision-and-Language Navigation with Collision Mitigation in Continuous Environment</span>
-                                    <br> Seongjun Jeong, <a href='https://gicheonkang.com/'>Gi-Cheon Kang</a>, <strong>Joochan Kim</strong>, <a href="https://cse.snu.ac.kr/en/people/faculty/55">Byoung-Tak Zhang</a>
-                                    <br>
-                                    <em>CVPR Workshop on Embodied AI</em>, 2025
-                                    <br>
-                                    <a href="https://arxiv.org/abs/2410.17267">paper</a>
-                                    <p></p>
-                                    <p>We propose the zero-shot Vision-and-Language Navigation with Collision Mitigation (VLN-CM), which takes low-level actions as an output while considering possible collisions.</p>
-                                </td>
-                            </tr>
-
-                            <tr class="paper-row">
-                                <td style="padding:16px;width:20%;vertical-align:middle">
-                                    <div class="one">
-                                        <img src='images/mpgn.png' width="160">
-                                    </div>
-                                </td>
-                                <td style="padding:8px;width:80%;vertical-align:middle">
-                                    <span class="papertitle">Modal-specific Pseudo Query Generation for Video Corpus Moment Retrieval</span>
-                                    <br>
-                                    <a href="https://minjoong507.github.io">Minjoon Jung</a>, Seongho Choi, <strong>Joochan Kim</strong>, <a href='https://wityworks.com/'>Jin-Hwa Kim</a>, <a href="https://cse.snu.ac.kr/en/people/faculty/55">Byoung-Tak Zhang</a>
-                                    <br>
-                                    <em>EMNLP</em>, 2022
-                                    <br>
-                                    <a href="https://arxiv.org/abs/2210.12617">paper</a>
-                                    <p></p>
-                                    <p>We propose a self-supervised learning framework: Modal-specific Pseudo Query Generation Network (MPGN). First, MPGN selects candidate temporal moments via subtitle-based moment sampling. Then, it generates pseudo queries
-                                        exploiting both visual and textual information from the selected temporal moments.</p>
-                                </td>
-                            </tr>
-                        </tbody>
-                    </table>
-
-                    <table style="width:100%; margin:0 auto; border:0; border-spacing:0; padding:16px;">
-                        <tbody>
-                            <tr>
-                                <td>
-                                    <h2>Miscellanea</h2>
-                                </td>
-                            </tr>
-                        </tbody>
-                    </table>
-                    <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;">
-                        <tbody>
-
-
-                            <!-- <tr>
-              <td align="center" style="padding:16px;width:20%;vertical-align:middle">
-						     <div class="colored-box" style="background-color: #fcb97d;">
-								 <h2>Micropapers</h2>
-								 </div>
-              </td>
-              <td style="padding:8px;width:80%;vertical-align:middle">
-                <a href="https://arxiv.org/abs/2112.11687">Squareplus: A Softplus-Like Algebraic Rectifier</a>
-                <br>
-                <a href="https://arxiv.org/abs/2010.09714">A Convenient Generalization of Schlick's Bias and Gain Functions</a>
-                <br>
-                <a href="https://arxiv.org/abs/1704.07483">Continuously Differentiable Exponential Linear Units</a>
-                <br>
-                <a href="https://jonbarron.info/data/cvpr2023_llm_workshop_annotated.pdf">Scholars & Big Models: How Can Academics Adapt?</a>
-              </td>
-            </tr>
-
-
-            <tr>
-              <td align="center" style="padding:16px;width:20%;vertical-align:middle">
-						     <div class="colored-box" style="background-color: #aaba9e;">
-								 <h2>Recorded Talks</h2>
-								 </div>
-              </td>
-              <td style="padding:8px;width:80%;vertical-align:center">
-                <a href="https://www.youtube.com/watch?v=h9vq_65eDas">View Dependent Podcast, 2024</a>
-								<br>
-                <a href="https://www.youtube.com/watch?v=4tDhYsFuEqo">Bay Area Robotics Symposium, 2023</a>
-								<br>
-                <a href="https://youtu.be/TvWkwDYtBP4?t=7604">EGSR Keynote, 2021</a>
-								<br>
-								<a href="https://www.youtube.com/watch?v=nRyOzHpcr4Q">TUM AI Lecture Series, 2020</a>
-								<br>
-								<a href="https://www.youtube.com/watch?v=HfJpQCBTqZs">Vision & Graphics Seminar at MIT, 2020</a>
-              </td>
-            </tr> -->
-
-                            <tr>
-                                <td align="center" style="padding:16px;width:20%;vertical-align:middle">
-                                    <div class="colored-box" style="background-color: #c6b89e;">
-                                        <h2>Academic Service</h2>
-                                    </div>
-                                </td>
-                                <td style="padding:8px;width:80%;vertical-align:center">
-                                    <a href="https://neurips.cc/Conferences/2025">Reviewer, NeurIPS 2025-2026</a>
-                                    <br>
-                                    <a href="https://cvpr.thecvf.com/Conferences/2025">Reviewer, CVPR 2026</a>
-                                    <br>
-                                    <a href="https://eccv.ecva.net/Conferences/2026">Reviewer, ECCV 2026</a>
-                                </td>
-                            </tr>
-
-                            <tr>
-                                <td align="center" style="padding:16px;width:20%;vertical-align:middle">
-                                    <div class="colored-box" style="background-color: #edd892;">
-                                        <h2>Teaching</h2>
-                                    </div>
-                                </td>
-                                <td style="padding:8px;width:80%;vertical-align:center">
-                                    Teaching Assistant, M1522.000300 Spring 2023
-                                    <!-- <br>
-                <a href="http://inst.eecs.berkeley.edu/~cs188/fa10/announcements.html">Graduate Student Instructor, CS188 Fall 2010</a>
-                <br>
-                <a href="http://aima.cs.berkeley.edu/">Figures, "Artificial Intelligence: A Modern Approach", 3rd Edition</a> -->
-                                </td>
-                            </tr>
-
-                        </tbody>
-                    </table>
-                    <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;">
-                        <tbody>
-                            <tr>
-                                <td style="padding:0px">
-                                    <br>
-                                    <p style="text-align:right;font-size:small; color: #888;">
-                                        &copy; 2026 Joochan Kim.
-                                        <br> Design adapted from <a href="https://github.com/jonbarron/jonbarron_website" style="color: #888; text-decoration: underline;">Jon Barron</a>.
-                                    </p>
-                                </td>
-                            </tr>
-                        </tbody>
-                    </table>
-                </td>
-            </tr>
-    </table>
-</body>
-
-</html>
+    <section id="miscellanea" aria-labelledby="misc-heading">
+        <h2 id="misc-heading">Miscellanea</h2>
+        <div class="misc">
+            <div class="misc-row">
+                <span class="misc-tag service">Academic Service</span>
+                <div>
+                    <a href="https://neurips.cc/Conferences/2025">Reviewer, NeurIPS 2025–2026</a><br>
+                    <a href="https://cvpr.thecvf.com/Conferences/2025">Reviewer, CVPR 2026</a><br>
+                    <a href="https://eccv.ecva.net/Conferences/2026">Reviewer, ECCV 2026</a>
+                </div>
+            </div>
+            <div class="misc-row">
+                <span class="misc-tag teaching">Teaching</span>
+                <div>Teaching Assistant, M1522.000300 Spring 2023</div>
+            </div>
+        </div>
+    </section>
+</main>

@@ -1,0 +1,33 @@
+title: Joochan Kim
+description: >-
+  Joochan Kim — incoming PhD student at Purdue (Fall 2026), research intern at KIST.
+  Working on Embodied AI, Vision-Language-Action models, and multimodal AI.
+author: Joochan Kim
+url: "https://tikatoka.github.io"
+baseurl: ""
+lang: en
+
+permalink: /blog/:year/:month/:day/:title/
+
+plugins:
+  - jekyll-feed
+  - jekyll-seo-tag
+
+feed:
+  path: feed.xml
+
+defaults:
+  - scope:
+      path: ""
+      type: posts
+    values:
+      layout: post
+
+exclude:
+  - README.md
+  - Gemfile
+  - Gemfile.lock
+  - .windsurf
+  - vendor
+  - node_modules
+

@@ -1,0 +1,29 @@
+---
+layout: default
+title: Blog
+permalink: /blog/
+description: Notes and writings by Joochan Kim on research, ideas, and experiments.
+---
+
+<section class="blog-index">
+    <header class="page-header">
+        <h1>Blog</h1>
+        <p class="section-intro">Notes on research, papers I'm reading, and occasional thoughts.</p>
+    </header>
+
+    {% if site.posts.size > 0 %}
+    <ul class="post-list">
+        {% for post in site.posts %}
+        <li class="post-list-item">
+            <a class="post-list-link" href="{{ post.url | relative_url }}">
+                <time class="post-list-date" datetime="{{ post.date | date_to_xmlschema }}">{{ post.date | date: "%b %-d, %Y" }}</time>
+                <span class="post-list-title">{{ post.title }}</span>
+            </a>
+            {% if post.description %}<p class="post-list-excerpt">{{ post.description }}</p>{% endif %}
+        </li>
+        {% endfor %}
+    </ul>
+    {% else %}
+    <p class="section-intro">No posts yet — check back soon.</p>
+    {% endif %}
+</section>

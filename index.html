@@ -3,36 +3,56 @@ layout: default
 permalink: /
 ---
 
-<header class="hero">
+<section class="hero" aria-label="About">
     <div class="hero-text">
         <h1 class="name">Joochan Kim</h1>
-        <p>I am an first year PhD student at <a href="https://engineering.purdue.edu/ECE">Purdue ECE</a>, advised by <a href="https://ziranw.github.io/">Ziran Wang</a>. I was a research intern at <a href="https://cai.kist.re.kr/">KIST</a> in Seoul, working on Embodied AI, with a focus on Vision-Language-Action models, under the mentorship of <a href="https://www.hwasup.net/">Hwasup Lim</a> and <a href="https://tackgeun.github.io/">Tackgeun You</a>.</p>
+        <p class="role">PhD Student · Purdue ECE</p>
+        <p>I am a first-year PhD student at <a href="https://engineering.purdue.edu/ECE">Purdue ECE</a>, advised by <a href="https://ziranw.github.io/">Ziran Wang</a>. I was a research intern at <a href="https://cai.kist.re.kr/">KIST</a> in Seoul, working on Embodied AI, with a focus on Vision-Language-Action models, under the mentorship of <a href="https://www.hwasup.net/">Hwasup Lim</a> and <a href="https://tackgeun.github.io/">Tackgeun You</a>.</p>
         <p>I received my M.S. from <a href="http://cse.snu.ac.kr">SNU</a>, advised by <a href="https://bi.snu.ac.kr/members/byoung-tak-zhang.html">Byoung-Tak Zhang</a>. During my master's program, I also interned at <a href="https://www.a-star.edu.sg/simtech/research/adaptive-robotics-and-mechatronics-(arm)">SIMTech, A*STAR</a>, where I was mentored by <a href="https://h-y-zhu.github.io/">Haiyue Zhu</a>. I received my B.S. from <a href="https://cs.yonsei.ac.kr/csai/index.do">Yonsei University</a>.</p>
         <nav class="contact" aria-label="Contact links">
-            <a href="mailto:kim5666@purdue.edu">Email</a>
-            <a href="data/jckim-cv.pdf">CV (Dec 2025)</a>
+            <a class="contact-primary" href="mailto:kim5666@purdue.edu">
+                <svg aria-hidden="true" width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="m22 7-10 6L2 7"/></svg>
+                Email
+            </a>
+            <a href="data/jckim-cv.pdf">CV <span class="contact-note">Dec 2025</span></a>
             <a href="https://scholar.google.com/citations?user=8DtoB2QAAAAJ">Scholar</a>
             <a href="https://www.linkedin.com/in/tikatoka/">LinkedIn</a>
             <a href="https://github.com/TikaToka">GitHub</a>
         </nav>
     </div>
     <div class="hero-photo">
-        <a href="images/jckim.jpg" aria-label="Profile photo of Joochan Kim">
-            <img class="profile-photo" alt="Profile photo of Joochan Kim" src="images/jckim.jpg">
-        </a>
+        <img class="profile-photo" alt="Profile photo of Joochan Kim" src="images/jckim.jpg" width="200" height="200" fetchpriority="high">
     </div>
-</header>
+</section>
 
 <main>
+    <section id="news" aria-labelledby="news-heading">
+        <h2 id="news-heading">News</h2>
+        <ul class="news">
+            <li><time datetime="2026-10">Oct 2026</time><span><a href="#paper-go2drivor">Go2-DrivoR</a>, our quadruped navigation work, is at the IROS 2026 Workshop on AI Meets Autonomy. Preprint on <a href="https://arxiv.org/abs/2610.08812">arXiv</a>.</span></li>
+            <li><time datetime="2026-08">Aug 2026</time><span>Started my PhD at <a href="https://engineering.purdue.edu/ECE">Purdue ECE</a>, advised by <a href="https://ziranw.github.io/">Ziran Wang</a>.</span></li>
+            <li><time datetime="2025-12">Dec 2025</time><span><a href="#paper-losing-winner">The Losing Winner</a> is at the NeurIPS 2025 Workshop on Generative AI in Finance.</span></li>
+            <li><time datetime="2025-11">Nov 2025</time><span><a href="#paper-cvln">Continual Vision-and-Language Navigation</a> is at BMVC 2025.</span></li>
+            <li><time datetime="2025-06">Jun 2025</time><span><a href="#paper-vlncm">VLN-CM</a> is at the CVPR 2025 Workshop on Embodied AI.</span></li>
+        </ul>
+        <details class="news-more">
+            <summary>Older news</summary>
+            <ul class="news">
+                <li><time datetime="2025-04">Apr 2025</time><span><a href="#paper-ordinal-bias">Ordinal bias in action recognition</a> is at the ICLR 2025 Workshop on Spurious Correlation and Shortcut Learning.</span></li>
+                <li><time datetime="2025-03">Mar 2025</time><span><a href="#paper-bmdetr">BM-DETR</a> is at WACV 2025.</span></li>
+            </ul>
+        </details>
+    </section>
+
     <section id="research" aria-labelledby="research-heading">
         <h2 id="research-heading">Research</h2>
-        <p class="section-intro">I'm interested in Embodied AI, Multimodal AI, and data-centric AI. Most of my research is about developing embodied AI from internet AI. Some papers with <span class="highlight">highlight</span> are papers with main contributions.</p>
+        <p class="section-intro">I'm interested in Embodied AI, Multimodal AI, and data-centric AI. Most of my research is about developing embodied AI from internet AI. Papers where I'm a lead author are marked with a <span class="lead-key">gold bar</span>. <span class="nowrap">* equal contribution.</span></p>
 
         <div class="papers">
-            <article class="paper highlight">
-                <img class="paper-thumb" src="images/iros2026w.png" alt="Go2-DrivoR real-world trajectory prediction example">
+            <article class="paper highlight" id="paper-go2drivor">
+                <img class="paper-thumb" src="images/iros2026w.png" alt="Go2-DrivoR real-world trajectory prediction example" loading="lazy" decoding="async" width="320" height="200">
                 <div class="paper-body">
-                    <span class="papertitle">Taming an End-to-End Autonomous Driving Policy for Urban Navigation of Quadruped Robots</span>
+                    <h3 class="papertitle">Taming an End-to-End Autonomous Driving Policy for Urban Navigation of Quadruped Robots</h3>
                     <div class="paper-authors">
                         <strong>Joochan Kim*</strong>, Chanuk Yang*, <a href="https://tackgeun.github.io/">Tackgeun You</a>,
                         <a href="https://ziranw.github.io/">Ziran Wang</a>,
@@ -46,15 +66,27 @@ permalink: /
                         <a class="paper-badge paper-badge--poster" href="data/poster/iros2026w.pdf">
                             {% include icons/poster.svg %}<span>Poster</span>
                         </a>
+                        <button type="button" class="paper-badge paper-badge--bibtex" aria-expanded="false" hidden>
+                            {% include icons/bibtex.svg %}<span>BibTeX</span>
+                        </button>
                     </div>
                     <p class="paper-tldr">We present Go2-DrivoR, a goal-conditioned adaptation of the end-to-end autonomous driving planner DrivoR for urban quadrupedal navigation. Trained exclusively on TartanGround simulation data, it improves goal-conditioned planning on unseen simulated environments and transfers zero-shot to open-loop real-world Unitree Go2 trajectory prediction.</p>
+                    <div class="bibtex" hidden>
+<pre><code>@inproceedings{kim2026taming,
+  title     = {Taming an End-to-End Autonomous Driving Policy for Urban Navigation of Quadruped Robots},
+  author    = {Kim, Joochan and Yang, Chanuk and You, Tackgeun and Wang, Ziran and Lim, Hwasup},
+  booktitle = {IROS Workshop on AI Meets Autonomy},
+  year      = {2026}
+}</code></pre>
+                        <button type="button" class="bibtex-copy">Copy</button>
+                    </div>
                 </div>
             </article>
 
-            <article class="paper highlight">
-                <img class="paper-thumb" src="images/neuripsw2025.png" alt="The Losing Winner paper figure">
+            <article class="paper highlight" id="paper-losing-winner">
+                <img class="paper-thumb" src="images/neuripsw2025.png" alt="The Losing Winner paper figure" loading="lazy" decoding="async" width="320" height="200">
                 <div class="paper-body">
-                    <span class="papertitle">The Losing Winner: An LLM Agent that Predicts the Market but Loses Money</span>
+                    <h3 class="papertitle">The Losing Winner: An LLM Agent that Predicts the Market but Loses Money</h3>
                     <div class="paper-authors">
                         <a href="https://greeksharifa.github.io/">Youwon Jang*</a>,
                         <strong>Joochan Kim*</strong>,
@@ -65,18 +97,30 @@ permalink: /
                         <a class="paper-badge paper-badge--paper" href="https://doi.org/10.13140/RG.2.2.26292.51847">
                             {% include icons/paper.svg %}<span>Paper</span>
                         </a>
-                        <a class="paper-badge paper-badge--poster" href="data/poster/iclr2025w.pdf">
+                        <a class="paper-badge paper-badge--poster" href="data/poster/nips2025w.pdf">
                             {% include icons/poster.svg %}<span>Poster</span>
                         </a>
+                        <button type="button" class="paper-badge paper-badge--bibtex" aria-expanded="false" hidden>
+                            {% include icons/bibtex.svg %}<span>BibTeX</span>
+                        </button>
                     </div>
                     <p class="paper-tldr">Fine-tuning an LLM for Bitcoin market state prediction improves accuracy but paradoxically worsens trading returns, exposing the dangers of proxy objectives and reward hacking in financial AI.</p>
+                    <div class="bibtex" hidden>
+<pre><code>@inproceedings{jang2025losing,
+  title     = {The Losing Winner: An LLM Agent that Predicts the Market but Loses Money},
+  author    = {Jang, Youwon and Kim, Joochan and Zhang, Byoung-Tak},
+  booktitle = {NeurIPS Workshop on Generative AI in Finance},
+  year      = {2025}
+}</code></pre>
+                        <button type="button" class="bibtex-copy">Copy</button>
+                    </div>
                 </div>
             </article>
 
-            <article class="paper">
-                <img class="paper-thumb" src="images/cvln.png" alt="Continual Vision-and-Language Navigation paper figure">
+            <article class="paper" id="paper-cvln">
+                <img class="paper-thumb" src="images/cvln.png" alt="Continual Vision-and-Language Navigation paper figure" loading="lazy" decoding="async" width="320" height="200">
                 <div class="paper-body">
-                    <span class="papertitle">Continual Vision-and-Language Navigation</span>
+                    <h3 class="papertitle">Continual Vision-and-Language Navigation</h3>
                     <div class="paper-authors">
                         Seongjun Jeong, <a href="https://gicheonkang.com/">Gi-Cheon Kang</a>, Seongho Choi, <strong>Joochan Kim</strong>, <a href="https://cse.snu.ac.kr/en/people/faculty/55">Byoung-Tak Zhang</a>
                     </div>
@@ -85,15 +129,27 @@ permalink: /
                         <a class="paper-badge paper-badge--paper" href="https://bmvc2025.bmva.org/proceedings/84">
                             {% include icons/paper.svg %}<span>Paper</span>
                         </a>
+                        <button type="button" class="paper-badge paper-badge--bibtex" aria-expanded="false" hidden>
+                            {% include icons/bibtex.svg %}<span>BibTeX</span>
+                        </button>
                     </div>
                     <p class="paper-tldr">We propose Continual Vision-and-Language Navigation (CVLN) paradigm along with two methods for CVLN: Perplexity Replay (PerpR) and Episodic Self-Replay (ESR).</p>
+                    <div class="bibtex" hidden>
+<pre><code>@inproceedings{jeong2025continual,
+  title     = {Continual Vision-and-Language Navigation},
+  author    = {Jeong, Seongjun and Kang, Gi-Cheon and Choi, Seongho and Kim, Joochan and Zhang, Byoung-Tak},
+  booktitle = {British Machine Vision Conference (BMVC)},
+  year      = {2025}
+}</code></pre>
+                        <button type="button" class="bibtex-copy">Copy</button>
+                    </div>
                 </div>
             </article>
 
-            <article class="paper highlight">
-                <img class="paper-thumb" src="images/ordinalbias.png" alt="Ordinal bias in action recognition paper figure">
+            <article class="paper highlight" id="paper-ordinal-bias">
+                <img class="paper-thumb" src="images/ordinalbias.png" alt="Ordinal bias in action recognition paper figure" loading="lazy" decoding="async" width="320" height="200">
                 <div class="paper-body">
-                    <span class="papertitle">Exploring Ordinal Bias in Action Recognition for Instructional Videos</span>
+                    <h3 class="papertitle">Exploring Ordinal Bias in Action Recognition for Instructional Videos</h3>
                     <div class="paper-authors">
                         <strong>Joochan Kim</strong>, <a href="https://minjoong507.github.io">Minjoon Jung</a>, <a href="https://cse.snu.ac.kr/en/people/faculty/55">Byoung-Tak Zhang</a>
                     </div>
@@ -102,18 +158,30 @@ permalink: /
                         <a class="paper-badge paper-badge--arxiv" href="https://arxiv.org/abs/2504.06580">
                             {% include icons/arxiv.svg %}<span>arXiv</span>
                         </a>
-                        <a class="paper-badge paper-badge--poster" href="data/poster/nips2025w.pdf">
+                        <a class="paper-badge paper-badge--poster" href="data/poster/iclr2025w.pdf">
                             {% include icons/poster.svg %}<span>Poster</span>
                         </a>
+                        <button type="button" class="paper-badge paper-badge--bibtex" aria-expanded="false" hidden>
+                            {% include icons/bibtex.svg %}<span>BibTeX</span>
+                        </button>
                     </div>
                     <p class="paper-tldr">Ordinal bias leads action recognition models to over-rely on dominant action pairs, inflating performance and lacking true video comprehension even when challenged by action masking and sequence shuffling.</p>
+                    <div class="bibtex" hidden>
+<pre><code>@inproceedings{kim2025exploring,
+  title     = {Exploring Ordinal Bias in Action Recognition for Instructional Videos},
+  author    = {Kim, Joochan and Jung, Minjoon and Zhang, Byoung-Tak},
+  booktitle = {ICLR Workshop on Spurious Correlation and Shortcut Learning},
+  year      = {2025}
+}</code></pre>
+                        <button type="button" class="bibtex-copy">Copy</button>
+                    </div>
                 </div>
             </article>
 
-            <article class="paper">
-                <img class="paper-thumb" src="images/bmdetr.png" alt="BM-DETR paper figure">
+            <article class="paper" id="paper-bmdetr">
+                <img class="paper-thumb" src="images/bmdetr.png" alt="BM-DETR paper figure" loading="lazy" decoding="async" width="320" height="200">
                 <div class="paper-body">
-                    <span class="papertitle">Background-aware Moment Detection for Video Moment Retrieval</span>
+                    <h3 class="papertitle">Background-aware Moment Detection for Video Moment Retrieval</h3>
                     <div class="paper-authors">
                         <a href="https://minjoong507.github.io">Minjoon Jung</a>, <a href="https://github.com/greeksharifa">Youwon Jang</a>, Seongho Choi, <strong>Joochan Kim</strong>, <a href="https://wityworks.com/">Jin-Hwa Kim</a>, <a href="https://cse.snu.ac.kr/en/people/faculty/55">Byoung-Tak Zhang</a>
                     </div>
@@ -125,15 +193,27 @@ permalink: /
                         <a class="paper-badge paper-badge--code" href="https://github.com/minjoong507/BM-DETR">
                             {% include icons/code.svg %}<span>Code</span>
                         </a>
+                        <button type="button" class="paper-badge paper-badge--bibtex" aria-expanded="false" hidden>
+                            {% include icons/bibtex.svg %}<span>BibTeX</span>
+                        </button>
                     </div>
                     <p class="paper-tldr">We propose Background-aware Moment Detection TRansformer (BM-DETR), which carefully adopts a contrastive approach for robust prediction. BM-DETR achieves state-of-the-art performance on various benchmarks while being highly efficient.</p>
+                    <div class="bibtex" hidden>
+<pre><code>@inproceedings{jung2025background,
+  title     = {Background-aware Moment Detection for Video Moment Retrieval},
+  author    = {Jung, Minjoon and Jang, Youwon and Choi, Seongho and Kim, Joochan and Kim, Jin-Hwa and Zhang, Byoung-Tak},
+  booktitle = {IEEE/CVF Winter Conference on Applications of Computer Vision (WACV)},
+  year      = {2025}
+}</code></pre>
+                        <button type="button" class="bibtex-copy">Copy</button>
+                    </div>
                 </div>
             </article>
 
-            <article class="paper">
-                <img class="paper-thumb" src="images/vlncm.png" alt="VLN-CM paper figure">
+            <article class="paper" id="paper-vlncm">
+                <img class="paper-thumb" src="images/vlncm.png" alt="VLN-CM paper figure" loading="lazy" decoding="async" width="320" height="200">
                 <div class="paper-body">
-                    <span class="papertitle">Zero-Shot Vision-and-Language Navigation with Collision Mitigation in Continuous Environment</span>
+                    <h3 class="papertitle">Zero-Shot Vision-and-Language Navigation with Collision Mitigation in Continuous Environment</h3>
                     <div class="paper-authors">
                         Seongjun Jeong, <a href="https://gicheonkang.com/">Gi-Cheon Kang</a>, <strong>Joochan Kim</strong>, <a href="https://cse.snu.ac.kr/en/people/faculty/55">Byoung-Tak Zhang</a>
                     </div>
@@ -142,15 +222,27 @@ permalink: /
                         <a class="paper-badge paper-badge--arxiv" href="https://arxiv.org/abs/2410.17267">
                             {% include icons/arxiv.svg %}<span>arXiv</span>
                         </a>
+                        <button type="button" class="paper-badge paper-badge--bibtex" aria-expanded="false" hidden>
+                            {% include icons/bibtex.svg %}<span>BibTeX</span>
+                        </button>
                     </div>
                     <p class="paper-tldr">We propose the zero-shot Vision-and-Language Navigation with Collision Mitigation (VLN-CM), which takes low-level actions as an output while considering possible collisions.</p>
+                    <div class="bibtex" hidden>
+<pre><code>@inproceedings{jeong2025zeroshot,
+  title     = {Zero-Shot Vision-and-Language Navigation with Collision Mitigation in Continuous Environment},
+  author    = {Jeong, Seongjun and Kang, Gi-Cheon and Kim, Joochan and Zhang, Byoung-Tak},
+  booktitle = {CVPR Workshop on Embodied AI},
+  year      = {2025}
+}</code></pre>
+                        <button type="button" class="bibtex-copy">Copy</button>
+                    </div>
                 </div>
             </article>
 
-            <article class="paper">
-                <img class="paper-thumb" src="images/mpgn.png" alt="MPGN paper figure">
+            <article class="paper" id="paper-mpgn">
+                <img class="paper-thumb" src="images/mpgn.png" alt="MPGN paper figure" loading="lazy" decoding="async" width="320" height="200">
                 <div class="paper-body">
-                    <span class="papertitle">Modal-specific Pseudo Query Generation for Video Corpus Moment Retrieval</span>
+                    <h3 class="papertitle">Modal-specific Pseudo Query Generation for Video Corpus Moment Retrieval</h3>
                     <div class="paper-authors">
                         <a href="https://minjoong507.github.io">Minjoon Jung</a>, Seongho Choi, <strong>Joochan Kim</strong>, <a href="https://wityworks.com/">Jin-Hwa Kim</a>, <a href="https://cse.snu.ac.kr/en/people/faculty/55">Byoung-Tak Zhang</a>
                     </div>
@@ -159,8 +251,20 @@ permalink: /
                         <a class="paper-badge paper-badge--arxiv" href="https://arxiv.org/abs/2210.12617">
                             {% include icons/arxiv.svg %}<span>arXiv</span>
                         </a>
+                        <button type="button" class="paper-badge paper-badge--bibtex" aria-expanded="false" hidden>
+                            {% include icons/bibtex.svg %}<span>BibTeX</span>
+                        </button>
                     </div>
                     <p class="paper-tldr">We propose a self-supervised learning framework: Modal-specific Pseudo Query Generation Network (MPGN). First, MPGN selects candidate temporal moments via subtitle-based moment sampling. Then, it generates pseudo queries exploiting both visual and textual information from the selected temporal moments.</p>
+                    <div class="bibtex" hidden>
+<pre><code>@inproceedings{jung2022modal,
+  title     = {Modal-specific Pseudo Query Generation for Video Corpus Moment Retrieval},
+  author    = {Jung, Minjoon and Choi, Seongho and Kim, Joochan and Kim, Jin-Hwa and Zhang, Byoung-Tak},
+  booktitle = {Proceedings of the 2022 Conference on Empirical Methods in Natural Language Processing (EMNLP)},
+  year      = {2022}
+}</code></pre>
+                        <button type="button" class="bibtex-copy">Copy</button>
+                    </div>
                 </div>
             </article>
         </div>
@@ -171,17 +275,63 @@ permalink: /
         <div class="misc">
             <div class="misc-row">
                 <span class="misc-tag service">Academic Service</span>
-                <div>
-                    <a href="https://neurips.cc"">Reviewer, NeurIPS 2025–2026</a><br>
-                    <a href="https://cvpr.thecvf.com">Reviewer, CVPR 2026</a><br>
-                    <a href="https://eccv.ecva.net">Reviewer, ECCV 2026</a><br>
-                    <a href="https://ieee-iotj.org/">Reviewer, IEEE Internet of Things Journal</a>
-                </div>
+                <ul class="misc-list">
+                    <li><a href="https://neurips.cc">Reviewer, NeurIPS 2025–2026</a></li>
+                    <li><a href="https://cvpr.thecvf.com">Reviewer, CVPR 2026</a></li>
+                    <li><a href="https://eccv.ecva.net">Reviewer, ECCV 2026</a></li>
+                    <li><a href="https://ieee-iotj.org/">Reviewer, IEEE Internet of Things Journal</a></li>
+                </ul>
             </div>
             <div class="misc-row">
                 <span class="misc-tag teaching">Teaching</span>
-                <div>Teaching Assistant, M1522.000300 Spring 2023</div>
+                <ul class="misc-list">
+                    <li>Teaching Assistant, M1522.000300 Spring 2023</li>
+                </ul>
             </div>
         </div>
     </section>
 </main>
+
+<script>
+  (function () {
+    // ---- BibTeX toggles + copy ----
+    var papers = Array.prototype.slice.call(document.querySelectorAll('.paper'));
+    papers.forEach(function (paper) {
+      var toggle = paper.querySelector('.paper-badge--bibtex');
+      var box = paper.querySelector('.bibtex');
+      if (!toggle || !box) return;
+      toggle.hidden = false;
+      toggle.addEventListener('click', function () {
+        var open = toggle.getAttribute('aria-expanded') === 'true';
+        toggle.setAttribute('aria-expanded', open ? 'false' : 'true');
+        box.hidden = open;
+      });
+      var copy = box.querySelector('.bibtex-copy');
+      var code = box.querySelector('code');
+      if (!copy || !code) return;
+      copy.addEventListener('click', function () {
+        var text = code.textContent;
+        function done(ok) {
+          copy.textContent = ok ? 'Copied!' : 'Press Ctrl+C';
+          copy.classList.toggle('is-copied', ok);
+          setTimeout(function () { copy.textContent = 'Copy'; copy.classList.remove('is-copied'); }, 1600);
+        }
+        function fallback() {
+          var range = document.createRange();
+          range.selectNodeContents(code);
+          var sel = window.getSelection();
+          sel.removeAllRanges();
+          sel.addRange(range);
+          var ok = false;
+          try { ok = document.execCommand('copy'); } catch (e) {}
+          done(ok);
+        }
+        if (navigator.clipboard && navigator.clipboard.writeText) {
+          navigator.clipboard.writeText(text).then(function () { done(true); }, fallback);
+        } else {
+          fallback();
+        }
+      });
+    });
+  })();
+</script>
